@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6dbb63b1-982f-4728-8f04-a20bd3344c8f" name="Changes" comment="Added InputConverter tests&#10;Added 2 InputChecker tests">
+    <list default="true" id="6dbb63b1-982f-4728-8f04-a20bd3344c8f" name="Changes" comment="Added All InputChecker tests">
+      <change afterPath="$PROJECT_DIR$/src/test/java/by/lev/LineConverterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/InputChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/InputChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/by/lev/InputCheckerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/lev/InputCheckerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/by/lev/check-list.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/lev/check-list.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,42 +43,7 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/QA course/projects/homework-calculator&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.InputCheckerTest.input_MoreThanMaxValueOfDouble_method_equalResultValueAndDoubleMaxValue_expect_false">
-    <configuration name="InputCheckerTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="homework-calculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="by.lev.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="by.lev" />
-      <option name="MAIN_CLASS_NAME" value="by.lev.InputCheckerTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InputCheckerTest.input_MaxValueOfDouble_method_equalResultValueAndDoubleMaxValue_expect_true" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="homework-calculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="by.lev.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="by.lev" />
-      <option name="MAIN_CLASS_NAME" value="by.lev.InputCheckerTest" />
-      <option name="METHOD_NAME" value="input_MaxValueOfDouble_method_equalResultValueAndDoubleMaxValue_expect_true" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.LineConverterTest">
     <configuration name="InputCheckerTest.input_MoreThanMaxValueOfDouble_method_equalResultValueAndDoubleMaxValue_expect_false" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="homework-calculator" />
       <extension name="coverage">
@@ -99,7 +62,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InputCheckerTest.method_checkLengthOfNumbers_Input_StringArray_Where_FirstStringsHaveLength23_expect_false" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LineConverterTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="homework-calculator" />
       <extension name="coverage">
         <pattern>
@@ -108,8 +71,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="by.lev" />
-      <option name="MAIN_CLASS_NAME" value="by.lev.InputCheckerTest" />
-      <option name="METHOD_NAME" value="method_checkLengthOfNumbers_Input_StringArray_Where_FirstStringsHaveLength23_expect_false" />
+      <option name="MAIN_CLASS_NAME" value="by.lev.LineConverterTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LineConverterTest.input_375Point375PlusMinus123Point123_expect_123Point123" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="homework-calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.lev.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="by.lev" />
+      <option name="MAIN_CLASS_NAME" value="by.lev.LineConverterTest" />
+      <option name="METHOD_NAME" value="input_375Point375PlusMinus123Point123_expect_123Point123" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -117,7 +97,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InputCheckerTest.method_checkLengthOfNumbers_Input_StringArray_Where_ThirdStringsHaveLength23_expect_false" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LineConverterTest.input_Plus375Point375PlusSomethingElse_expect_Plus" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="homework-calculator" />
       <extension name="coverage">
         <pattern>
@@ -126,8 +106,26 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="by.lev" />
-      <option name="MAIN_CLASS_NAME" value="by.lev.InputCheckerTest" />
-      <option name="METHOD_NAME" value="method_checkLengthOfNumbers_Input_StringArray_Where_ThirdStringsHaveLength23_expect_false" />
+      <option name="MAIN_CLASS_NAME" value="by.lev.LineConverterTest" />
+      <option name="METHOD_NAME" value="input_Plus375Point375PlusSomethingElse_expect_Plus" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LineConverterTest.input_Plus375Point375SomethingElse_expect_375Point375" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="homework-calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.lev.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="by.lev" />
+      <option name="MAIN_CLASS_NAME" value="by.lev.LineConverterTest" />
+      <option name="METHOD_NAME" value="input_Plus375Point375SomethingElse_expect_375Point375" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -137,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LineConverterTest" />
+        <item itemvalue="TestNG.LineConverterTest.input_375Point375PlusMinus123Point123_expect_123Point123" />
+        <item itemvalue="TestNG.LineConverterTest.input_Plus375Point375PlusSomethingElse_expect_Plus" />
+        <item itemvalue="TestNG.LineConverterTest.input_Plus375Point375SomethingElse_expect_375Point375" />
         <item itemvalue="TestNG.InputCheckerTest.input_MoreThanMaxValueOfDouble_method_equalResultValueAndDoubleMaxValue_expect_false" />
-        <item itemvalue="TestNG.InputCheckerTest.input_MaxValueOfDouble_method_equalResultValueAndDoubleMaxValue_expect_true" />
-        <item itemvalue="TestNG.InputCheckerTest" />
-        <item itemvalue="TestNG.InputCheckerTest.method_checkLengthOfNumbers_Input_StringArray_Where_ThirdStringsHaveLength23_expect_false" />
-        <item itemvalue="TestNG.InputCheckerTest.method_checkLengthOfNumbers_Input_StringArray_Where_FirstStringsHaveLength23_expect_false" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674403396804</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added All InputChecker tests">
+      <created>1674406788901</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674406788901</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -185,6 +190,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Calculator works!" />
     <MESSAGE value="Added InputConverter tests&#10;Added 2 InputChecker tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added InputConverter tests&#10;Added 2 InputChecker tests" />
+    <MESSAGE value="Added All InputChecker tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added All InputChecker tests" />
   </component>
 </project>

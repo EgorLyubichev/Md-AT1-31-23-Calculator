@@ -41,6 +41,26 @@ III. InputChecker check list:
         method: equalResultValueAndDoubleMaxValue(double result)
         expect: false
 
+IV. Line Converter check list:
+    1.  Input: '+375.375SomethingElse'
+        Methods:
+        1) getExpressionElementsFromLine(String line)
+        2) setNum1
+        3) getNum1
+        Expect: '375.375'
+    2.  Input: '+375.375+SomethingElse'
+        Methods:
+        1) getExpressionElementsFromLine(String line)
+        2) setOperator
+        3) getOperator
+        Expect: '+'
+    3.  Input: '375.375+-123.123'
+        Methods:
+        1) getExpressionElementsFromLine(String line)
+        2) setNum2
+        3) getNum2
+        Expect: '-123.123'
+
 
 Результат не должен превышать значение Double.MAX_VALUE
 
