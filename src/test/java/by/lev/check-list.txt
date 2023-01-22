@@ -20,8 +20,29 @@ II. InputConverter check list:
 III. InputChecker check list:
     1. Input: '3.0+-2.', method: checkInput(String line), expect: true.
     2. Input: 'word', method: checkInput(String line), expect: false.
+    3. Input: '3.0/0.1', method: checkNotByZero(String line), expect: true
+    4. Input: '3.0/0.', method: checkNotByZero(String line), expect: false
+    5. Input: '3.0/0', method: checkNotByZero(String line), expect: false
+    6.  Method: checkLengthOfNumbers,
+        args: String[] array = {"1234512345123451234512", "1", "1234512345123451234512"}
+        expect: true.
+    7.  Goal: input into array[0] value, where length == 23;
+        Method: checkLengthOfNumbers,
+        args: String[] array = {"12345123451234512345123", "1", "1234512345123451234512"}
+        expect: false.
+    8.  Goal: input into array[2] value, where length == 23;
+        Method: checkLengthOfNumbers,
+        args: String[] array = {"1234512345123451234512", "1", "12345123451234512345123"}
+        expect: false.
+    9.  Input: Double.MAX_VALUE,
+        method: equalResultValueAndDoubleMaxValue(double result)
+        expect: true
+    10. Input: Double.MAX_VALUE + 1,
+        method: equalResultValueAndDoubleMaxValue(double result)
+        expect: false
 
 
+Результат не должен превышать значение Double.MAX_VALUE
 
 
 

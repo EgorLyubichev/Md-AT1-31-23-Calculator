@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Controller {
 
     InputConverter inputConverter = new InputConverter();
-    InputChecker lineChecker = new InputChecker();
+    InputChecker checker = new InputChecker();
     LineConverter lineConverter = new LineConverter();
     Calculator calculator = new Calculator();
 
@@ -17,17 +17,17 @@ public class Controller {
 
         String formatExpression = inputConverter.getCorrectLine(expression);
 
-        if (!lineChecker.checkInput(formatExpression)){
+        if (!checker.checkInput(formatExpression)){
             System.out.println("В выражении допущена ошибка!\nПопробуйте снова\n- - - - -");
             getResult();
         }
-        if (!lineChecker.checkNotByZero(formatExpression)){
+        if (!checker.checkNotByZero(formatExpression)){
             System.out.println("На ноль делить нельзя!\nПопробуйте снова\n- - - - -");
             getResult();
         }
         lineConverter.getExpressionElementsFromLine(formatExpression);
         String[] lineElements = lineConverter.getLineElements();
-        if (!lineChecker.checkLengthOfNumbers(lineElements)){
+        if (!checker.checkLengthOfNumbers(lineElements)){
             System.out.println("Числа слишком длинные для вычисления!\nПопробуйте снова\n- - - - -");
             getResult();
         }else {
@@ -35,10 +35,16 @@ public class Controller {
             lineConverter.setNum2();
             lineConverter.setOperator();
         }
-        System.out.println(calculator.getAction(lineConverter.getNum1(),
+        Double result = calculator.getAction(lineConverter.getNum1(),
                 lineConverter.getNum2(),
-                lineConverter.getOperator()));
-        getResult();
+                lineConverter.getOperator());
+        if(checker.equalResultValueAndDoubleMaxValue(result)){
+            System.out.println(result + "\n- - - - -");
+            getResult();
+        } else {
+            System.out.println("Результат превышает допустимое значение!");
+            getResult();
+        }
     }
 
 
