@@ -9,28 +9,26 @@ public class Controller {
     LineConverter lineConverter = new LineConverter();
     Calculator calculator = new Calculator();
 
-    public void getResult(){
+    public void getResult() {
         System.out.print("Пример: ");
         String expression = scanInput();
 
-        //String expression = "-456+1456";
-
         String formatExpression = inputConverter.getCorrectLine(expression);
 
-        if (!checker.checkInput(formatExpression)){
+        if (!checker.checkInput(formatExpression)) {
             System.out.println("В выражении допущена ошибка!\nПопробуйте снова\n- - - - -");
             getResult();
         }
-        if (!checker.checkNotByZero(formatExpression)){
+        if (!checker.checkNotByZero(formatExpression)) {
             System.out.println("На ноль делить нельзя!\nПопробуйте снова\n- - - - -");
             getResult();
         }
         lineConverter.getExpressionElementsFromLine(formatExpression);
         String[] lineElements = lineConverter.getLineElements();
-        if (!checker.checkLengthOfNumbers(lineElements)){
+        if (!checker.checkLengthOfNumbers(lineElements)) {
             System.out.println("Числа слишком длинные для вычисления!\nПопробуйте снова\n- - - - -");
             getResult();
-        }else {
+        } else {
             lineConverter.setNum1();
             lineConverter.setNum2();
             lineConverter.setOperator();
@@ -38,7 +36,7 @@ public class Controller {
         Double result = calculator.getAction(lineConverter.getNum1(),
                 lineConverter.getNum2(),
                 lineConverter.getOperator());
-        if(checker.equalResultValueAndDoubleMaxValue(result)){
+        if (checker.equalResultValueAndDoubleMaxValue(result)) {
             System.out.println(result + "\n- - - - -");
             getResult();
         } else {
@@ -47,20 +45,8 @@ public class Controller {
         }
     }
 
-
-
-
-
-
-
-
-
-
-
     private String scanInput() {
         Scanner scanner = new Scanner(System.in);
         return scanner.nextLine();
     }
-
-
 }

@@ -29,5 +29,4 @@ public class InputChecker {
     public boolean equalResultValueAndDoubleMaxValue(double result){
         return (result <= Double.MAX_VALUE);
     }
-
 }
