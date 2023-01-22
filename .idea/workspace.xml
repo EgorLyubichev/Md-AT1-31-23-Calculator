@@ -4,29 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6dbb63b1-982f-4728-8f04-a20bd3344c8f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/a/6afe08716eec213b1503480944964898f7c422a2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/7/a746dcd5d5c064ae5181285e959618f75f1e1713" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/lev/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/lev/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/lev/CalculatorInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/lev/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/lev/InputChecker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/lev/InputConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/lev/LineConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/lev/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/by/lev/CalculatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/by/lev/InputTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/by/lev/check-list.txt" afterDir="false" />
+    <list default="true" id="6dbb63b1-982f-4728-8f04-a20bd3344c8f" name="Changes" comment="Calculator works!">
+      <change afterPath="$PROJECT_DIR$/src/test/java/by/lev/InputCheckerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/InputConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/InputConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/by/lev/InputTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/lev/InputConverterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/by/lev/check-list.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/lev/check-list.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,36 +41,11 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/QA course/projects/homework-calculator&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.App">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="by.lev.App" />
-      <module name="homework-calculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="by.lev.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="by.lev.Test" />
-      <module name="homework-calculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="by.lev.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.CalculatorTest">
     <configuration name="CalculatorTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="homework-calculator" />
       <extension name="coverage">
@@ -104,7 +63,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculatorTest.div_2_Division_0Point1_Expect_20" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="InputCheckerTest.input_3Point0PlusMinus2Point_method_checkInput_expect_true" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="homework-calculator" />
       <extension name="coverage">
         <pattern>
@@ -113,8 +72,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="by.lev" />
-      <option name="MAIN_CLASS_NAME" value="by.lev.CalculatorTest" />
-      <option name="METHOD_NAME" value="div_2_Division_0Point1_Expect_20" />
+      <option name="MAIN_CLASS_NAME" value="by.lev.InputCheckerTest" />
+      <option name="METHOD_NAME" value="input_3Point0PlusMinus2Point_method_checkInput_expect_true" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -122,7 +81,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculatorTest.div_2_Division_Minus0Point1_Expect_Minus20" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="InputCheckerTest.input_Word_method_checkInput_expect_false" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="homework-calculator" />
       <extension name="coverage">
         <pattern>
@@ -131,8 +90,44 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="by.lev" />
-      <option name="MAIN_CLASS_NAME" value="by.lev.CalculatorTest" />
-      <option name="METHOD_NAME" value="div_2_Division_Minus0Point1_Expect_Minus20" />
+      <option name="MAIN_CLASS_NAME" value="by.lev.InputCheckerTest" />
+      <option name="METHOD_NAME" value="input_Word_method_checkInput_expect_false" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InputConverterTest.input_2WhitespaceDivisionWhitespace3_expect_2Division3" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="homework-calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.lev.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="by.lev" />
+      <option name="MAIN_CLASS_NAME" value="by.lev.InputConverterTest" />
+      <option name="METHOD_NAME" value="input_2WhitespaceDivisionWhitespace3_expect_2Division3" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InputConverterTest.input_BracketMinus2BracketWhitespaceDivisionWhitespaceBracketPlus3BracketWhitespaceEquals_expect_Minus2DivisionPlus3" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="homework-calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.lev.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="by.lev" />
+      <option name="MAIN_CLASS_NAME" value="by.lev.InputConverterTest" />
+      <option name="METHOD_NAME" value="input_BracketMinus2BracketWhitespaceDivisionWhitespaceBracketPlus3BracketWhitespaceEquals_expect_Minus2DivisionPlus3" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -142,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
-        <item itemvalue="Application.Test" />
         <item itemvalue="TestNG.CalculatorTest" />
-        <item itemvalue="TestNG.CalculatorTest.div_2_Division_Minus0Point1_Expect_Minus20" />
-        <item itemvalue="TestNG.CalculatorTest.div_2_Division_0Point1_Expect_20" />
+        <item itemvalue="TestNG.InputCheckerTest.input_Word_method_checkInput_expect_false" />
+        <item itemvalue="TestNG.InputCheckerTest.input_3Point0PlusMinus2Point_method_checkInput_expect_true" />
+        <item itemvalue="TestNG.InputConverterTest.input_BracketMinus2BracketWhitespaceDivisionWhitespaceBracketPlus3BracketWhitespaceEquals_expect_Minus2DivisionPlus3" />
+        <item itemvalue="TestNG.InputConverterTest.input_2WhitespaceDivisionWhitespace3_expect_2Division3" />
       </list>
     </recent_temporary>
   </component>
@@ -159,6 +154,14 @@
       <option name="presentableId" value="Default" />
       <updated>1674212880142</updated>
     </task>
+    <task id="LOCAL-00001" summary="Calculator works!">
+      <created>1674400423142</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674400423142</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,5 +174,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Calculator works!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Calculator works!" />
   </component>
 </project>

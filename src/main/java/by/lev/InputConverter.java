@@ -4,8 +4,6 @@ public class InputConverter {
 
     private String correctLine;
 
-
-
     public String getCorrectLine(String inputLine) {
         inputLine = trimAllEscapes(inputLine);
         inputLine = removeBracketsInLine(inputLine);
