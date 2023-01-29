@@ -1,0 +1,27 @@
+1) ID 1
+
+2) Title: При прямом обращении к методу Calculator.doAction (пакет by.lev)
+при делении на '0', ожидаемый ArithmeticException не возвращается.
+
+3) Project: homework-calculator
+repository: https://github.com/EgorLyubichev/Md-AT1-31-23-Calculator
+
+4) Version: 1.0-SNAPSHOT
+
+5) Importance: S0
+
+6) Priotity: P3
+
+7) Status: open.
+
+8) Author: Egor Lyubichev
+
+9) Executor: Egor Lyubichev
+
+10) Steps to playback:
+    1) Open src/test/java/by/lev/CalculatorTest.java
+    2) Run test: div_2_Division_0_Expect_ArithmeticException()
+
+11) Result: Method CalculatorTest.div_2_Division_0_Expect_ArithmeticException()[pri:0, instance:by.lev.CalculatorTest@22fcf7ab] should have thrown an exception of type class java.lang.ArithmeticException
+
+12) Expected: ArithmeticException

@@ -34,7 +34,7 @@ public class Controller {
             lineConverter.setNum2();
             lineConverter.setOperator();
         }
-        Double result = calculator.getAction(lineConverter.getNum1(),
+        Double result = calculator.doAction(lineConverter.getNum1(),
                 lineConverter.getNum2(),
                 lineConverter.getOperator());
         if (checker.equalResultValueAndDoubleMaxValue(result)) {

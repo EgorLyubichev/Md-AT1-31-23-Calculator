@@ -14,7 +14,7 @@ public class InputChecker {
     }
 
     public boolean checkNotByZero(String line) {
-        Pattern pattern = Pattern.compile("[/][(]?[-]?[0]{1}[.]?[)]?$");
+        Pattern pattern = Pattern.compile("[/][-]?[0]{1,}[.]?$");
         Matcher matcher = pattern.matcher(line);
         return !matcher.find();
     }

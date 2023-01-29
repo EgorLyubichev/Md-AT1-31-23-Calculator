@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6dbb63b1-982f-4728-8f04-a20bd3344c8f" name="Changes" comment="InputConverter class was rewrite.&#10;InputConvertable interface added.">
+    <list default="true" id="6dbb63b1-982f-4728-8f04-a20bd3344c8f" name="Changes" comment="Calculator class was rewrite.&#10;Countable interface added.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/by/lev/bugreport1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/Countable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/Countable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/InputChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/InputChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/by/lev/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/lev/CalculatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +46,20 @@
     "last_opened_file_path": "C:/Users/user/Desktop/QA course/projects/homework-calculator"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.CalculatorTest">
+  <component name="RunManager" selected="TestNG.CalculatorTest.div_2_Division_0_Expect_ArithmeticException">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.lev.App" />
+      <module name="homework-calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.lev.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CalculatorTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="homework-calculator" />
       <extension name="coverage">
@@ -53,6 +71,24 @@
       <option name="PACKAGE_NAME" value="by.lev" />
       <option name="MAIN_CLASS_NAME" value="by.lev.CalculatorTest" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculatorTest.div_2_Division_0_Expect_ArithmeticException" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="homework-calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.lev.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="by.lev" />
+      <option name="MAIN_CLASS_NAME" value="by.lev.CalculatorTest" />
+      <option name="METHOD_NAME" value="div_2_Division_0_Expect_ArithmeticException" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -93,49 +129,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LineConverterTest.input_375Point375PlusMinus123Point123_expect_123Point123" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="homework-calculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="by.lev.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="by.lev" />
-      <option name="MAIN_CLASS_NAME" value="by.lev.LineConverterTest" />
-      <option name="METHOD_NAME" value="input_375Point375PlusMinus123Point123_expect_123Point123" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LineConverterTest.input_Plus375Point375PlusSomethingElse_expect_Plus" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="homework-calculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="by.lev.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="by.lev" />
-      <option name="MAIN_CLASS_NAME" value="by.lev.LineConverterTest" />
-      <option name="METHOD_NAME" value="input_Plus375Point375PlusSomethingElse_expect_Plus" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CalculatorTest.div_2_Division_0_Expect_ArithmeticException" />
+        <item itemvalue="Application.App" />
         <item itemvalue="TestNG.CalculatorTest" />
         <item itemvalue="TestNG.InputConverterTest" />
         <item itemvalue="TestNG.LineConverterTest" />
-        <item itemvalue="TestNG.LineConverterTest.input_375Point375PlusMinus123Point123_expect_123Point123" />
-        <item itemvalue="TestNG.LineConverterTest.input_Plus375Point375PlusSomethingElse_expect_Plus" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675012408365</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Calculator class was rewrite.&#10;Countable interface added.">
+      <created>1675014205346</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1675014205346</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -219,6 +226,7 @@
     <MESSAGE value="Added manual.txt" />
     <MESSAGE value="Replace String array to ArrayList of Strings" />
     <MESSAGE value="InputConverter class was rewrite.&#10;InputConvertable interface added." />
-    <option name="LAST_COMMIT_MESSAGE" value="InputConverter class was rewrite.&#10;InputConvertable interface added." />
+    <MESSAGE value="Calculator class was rewrite.&#10;Countable interface added." />
+    <option name="LAST_COMMIT_MESSAGE" value="Calculator class was rewrite.&#10;Countable interface added." />
   </component>
 </project>
