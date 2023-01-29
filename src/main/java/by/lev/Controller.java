@@ -11,8 +11,13 @@ public class Controller {
     Countable calculator = new Calculator();
 
     public void getResult() {
+        System.out.println("Выход: 'Q', 'Enter'.");
         System.out.print("Пример: ");
         String expression = scanInput();
+
+        if (expression.trim().equalsIgnoreCase("q")){
+            System.exit(0);
+        }
 
         String formatExpression = inputConverter.getCorrectLine(expression);
 
@@ -50,4 +55,6 @@ public class Controller {
         Scanner scanner = new Scanner(System.in);
         return scanner.nextLine();
     }
+
+
 }
