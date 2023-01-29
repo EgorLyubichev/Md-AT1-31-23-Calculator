@@ -23,9 +23,13 @@ public class Calculator implements Countable {
                 result = function.apply(num1, num2);
                 break;
             case '/':
-                function = (x1, x2) -> x1 / x2;
-                result = function.apply(num1, num2);
-                break;
+                if (!(num2 == 0)) {
+                    function = (x1, x2) -> x1 / x2;
+                    result = function.apply(num1, num2);
+                    break;
+                } else {
+                    throw new ArithmeticException();
+                }
         }
         return result;
     }
