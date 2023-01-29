@@ -8,7 +8,7 @@ public class Controller {
     InputConvertable inputConverter = new InputConverter();
     InputChecker checker = new InputChecker();
     LineConverter lineConverter = new LineConverter();
-    Calculator calculator = new Calculator();
+    Countable calculator = new Calculator();
 
     public void getResult() {
         System.out.print("Пример: ");

@@ -1,40 +1,34 @@
 package by.lev;
 
+import java.util.function.BiFunction;
+
 public class Calculator implements Countable {
-
-    private double getAddition(double num1, double num2) {
-        return num1 + num2;
-    }
-
-    private double getSubstraction(double num1, double num2) {
-        return num1 - num2;
-    }
-
-    private double getMultiplication(double num1, double num2) {
-        return num1 * num2;
-    }
-
-    private double getDivision(double num1, double num2) {
-        if (num2 == 0){
-            throw new ArithmeticException();
-        }
-        return num1 / num2;
-    }
 
     public Double getAction(double num1, double num2, char operator) {
 
+        BiFunction<Double, Double, Double> function;
+        Double result = null;
+
         switch (operator) {
             case '+':
-                return getAddition(num1, num2);
+                function = Double::sum;
+                result = function.apply(num1, num2);
+                break;
             case '-':
-                return getSubstraction(num1, num2);
+                function = (x1, x2) -> x1 - x2;
+                result = function.apply(num1, num2);
+                break;
             case '*':
-                return getMultiplication(num1, num2);
+                function = (x1, x2) -> x1 * x2;
+                result = function.apply(num1, num2);
+                break;
             case '/':
-                return getDivision(num1, num2);
-            default:
-                return null;
+                function = (x1, x2) -> x1 / x2;
+                result = function.apply(num1, num2);
+                break;
+
         }
+        return result;
     }
 
 }

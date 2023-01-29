@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6dbb63b1-982f-4728-8f04-a20bd3344c8f" name="Changes" comment="Replace String array to ArrayList of Strings">
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/lev/InputConvertable.java" afterDir="false" />
+    <list default="true" id="6dbb63b1-982f-4728-8f04-a20bd3344c8f" name="Changes" comment="InputConverter class was rewrite.&#10;InputConvertable interface added.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/CalculatorInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/Countable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/InputConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/InputConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/by/lev/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/lev/CalculatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +41,24 @@
     "last_opened_file_path": "C:/Users/user/Desktop/QA course/projects/homework-calculator"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.InputConverterTest">
+  <component name="RunManager" selected="TestNG.CalculatorTest">
+    <configuration name="CalculatorTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="homework-calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.lev.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="by.lev" />
+      <option name="MAIN_CLASS_NAME" value="by.lev.CalculatorTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="InputConverterTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="homework-calculator" />
       <extension name="coverage">
@@ -118,31 +129,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LineConverterTest.input_Plus375Point375SomethingElse_expect_375Point375" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="homework-calculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="by.lev.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="by.lev" />
-      <option name="MAIN_CLASS_NAME" value="by.lev.LineConverterTest" />
-      <option name="METHOD_NAME" value="input_Plus375Point375SomethingElse_expect_375Point375" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CalculatorTest" />
         <item itemvalue="TestNG.InputConverterTest" />
         <item itemvalue="TestNG.LineConverterTest" />
         <item itemvalue="TestNG.LineConverterTest.input_375Point375PlusMinus123Point123_expect_123Point123" />
         <item itemvalue="TestNG.LineConverterTest.input_Plus375Point375PlusSomethingElse_expect_Plus" />
-        <item itemvalue="TestNG.LineConverterTest.input_Plus375Point375SomethingElse_expect_375Point375" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675007287432</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="InputConverter class was rewrite.&#10;InputConvertable interface added.">
+      <created>1675012408365</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1675012408365</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -218,6 +218,7 @@
     <MESSAGE value="Added LineConverter tests" />
     <MESSAGE value="Added manual.txt" />
     <MESSAGE value="Replace String array to ArrayList of Strings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Replace String array to ArrayList of Strings" />
+    <MESSAGE value="InputConverter class was rewrite.&#10;InputConvertable interface added." />
+    <option name="LAST_COMMIT_MESSAGE" value="InputConverter class was rewrite.&#10;InputConvertable interface added." />
   </component>
 </project>
