@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class CalculatorTest {
 
-    CalculatorInterface calculator = new Calculator();
+    Countable calculator = new Calculator();
 
     @Test
     public void sum_2Plus3_Expect_5() {

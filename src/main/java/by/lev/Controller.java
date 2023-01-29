@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Controller {
 
-    InputConverter inputConverter = new InputConverter();
+    InputConvertable inputConverter = new InputConverter();
     InputChecker checker = new InputChecker();
     LineConverter lineConverter = new LineConverter();
     Calculator calculator = new Calculator();
