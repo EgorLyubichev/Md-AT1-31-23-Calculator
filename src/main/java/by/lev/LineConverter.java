@@ -18,6 +18,14 @@ public class LineConverter implements LineConvertable {
     private char operator;
     private final List<String> lineElements = new ArrayList<>(3);
 
+    public String getCorrectLine(String inputLine) {
+        return inputLine
+                .replace(" ", "")
+                .replace("=", "")
+                .replace("(", "")
+                .replace(")", "");
+    }
+
     public void setElements() {
         this.num1 = Double.parseDouble(lineElements.get(0));
         this.operator = lineElements.get(1).charAt(0);

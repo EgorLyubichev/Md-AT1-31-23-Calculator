@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Controller {
 
-    InputConvertable inputConverter = new InputConverter();
+
     InputChecker checker = new InputChecker();
     LineConvertable lineConverter = new LineConverter();
     Countable calculator = new Calculator();
@@ -19,7 +19,7 @@ public class Controller {
             System.exit(0);
         }
 
-        String formatExpression = inputConverter.getCorrectLine(expression);
+        String formatExpression = lineConverter.getCorrectLine(expression);
 
         if (!checker.checkInput(formatExpression)) {
             System.out.println("В выражении допущена ошибка!\nПопробуйте снова\n- - - - -");

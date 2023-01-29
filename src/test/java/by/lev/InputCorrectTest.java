@@ -3,9 +3,9 @@ package by.lev;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class InputConverterTest {
+public class InputCorrectTest {
 
-    InputConverter converter = new InputConverter();
+    LineConverter converter = new LineConverter();
 
     @Test
     public void input_Minus2Plus3_expect_Minus2Plus3(){

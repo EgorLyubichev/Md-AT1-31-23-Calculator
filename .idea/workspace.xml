@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6dbb63b1-982f-4728-8f04-a20bd3344c8f" name="Changes" comment="Added exit from App">
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/lev/LineConvertable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/lev/RegularExpression.java" afterDir="false" />
+    <list default="true" id="6dbb63b1-982f-4728-8f04-a20bd3344c8f" name="Changes" comment="Refactored LineConverter&#10;Added LineCon&#10;Added RegularExpression.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/LineConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/LineConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/by/lev/LineConverterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/lev/LineConverterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/by/lev/check-list.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/lev/check-list.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +42,7 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.LineConverterTest">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="by.lev.App" />
       <module name="homework-calculator" />
@@ -134,8 +127,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LineConverterTest" />
         <item itemvalue="Application.App" />
+        <item itemvalue="TestNG.LineConverterTest" />
         <item itemvalue="TestNG.CalculatorTest.div_2_Division_0_Expect_ArithmeticException" />
         <item itemvalue="TestNG.CalculatorTest" />
         <item itemvalue="TestNG.InputConverterTest" />
@@ -235,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675021344133</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Refactored LineConverter&#10;Added LineCon&#10;Added RegularExpression.java">
+      <created>1675024408537</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1675024408537</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -262,6 +262,7 @@
     <MESSAGE value="Fixed bug from bugreport1.txt" />
     <MESSAGE value="Added maven-surefire-report-plugin" />
     <MESSAGE value="Added exit from App" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added exit from App" />
+    <MESSAGE value="Refactored LineConverter&#10;Added LineCon&#10;Added RegularExpression.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored LineConverter&#10;Added LineCon&#10;Added RegularExpression.java" />
   </component>
 </project>
