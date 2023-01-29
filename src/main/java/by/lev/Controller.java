@@ -1,5 +1,6 @@
 package by.lev;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class Controller {
@@ -24,7 +25,7 @@ public class Controller {
             getResult();
         }
         lineConverter.getExpressionElementsFromLine(formatExpression);
-        String[] lineElements = lineConverter.getLineElements();
+        List<String> lineElements = lineConverter.getLineElements();
         if (!checker.checkLengthOfNumbers(lineElements)) {
             System.out.println("Числа слишком длинные для вычисления!\nПопробуйте снова\n- - - - -");
             getResult();

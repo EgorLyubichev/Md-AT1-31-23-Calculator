@@ -1,5 +1,7 @@
 package by.lev;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -8,9 +10,9 @@ public class LineConverter {
     private double num1;
     private double num2;
     private char operator;
-    private String[] lineElements = new String[3];
+    private List<String> lineElements = new ArrayList<>(3);
 
-    public String[] getLineElements() {
+    public List<String> getLineElements() {
         return lineElements;
     }
 
@@ -27,15 +29,15 @@ public class LineConverter {
     }
 
     public void setNum1() {
-        this.num1 = Double.parseDouble(lineElements[0]);
+        this.num1 = Double.parseDouble(lineElements.get(0));
     }
 
     public void setNum2() {
-        this.num2 = Double.parseDouble(lineElements[2]);
+        this.num2 = Double.parseDouble(lineElements.get(2));
     }
 
     public void setOperator() {
-        this.operator = lineElements[1].charAt(0);
+        this.operator = lineElements.get(1).charAt(0);
     }
 
     public void getExpressionElementsFromLine(String line) {
@@ -45,8 +47,8 @@ public class LineConverter {
         if (matcher.find()) {
             firstEnd = matcher.end();
         }
-        lineElements[0] = line.substring(0, (firstEnd));
-        lineElements[1] = line.substring(firstEnd, firstEnd + 1);
-        lineElements[2] = line.substring(firstEnd + 1);
+        lineElements.add(line.substring(0, (firstEnd)));
+        lineElements.add(line.substring(firstEnd, firstEnd + 1));
+        lineElements.add(line.substring(firstEnd + 1));
     }
 }

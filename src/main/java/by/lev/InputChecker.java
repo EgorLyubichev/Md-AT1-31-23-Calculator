@@ -1,5 +1,6 @@
 package by.lev;
 
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -18,8 +19,8 @@ public class InputChecker {
         return !matcher.find();
     }
 
-    public boolean checkLengthOfNumbers(String[] lineElements) {
-        if (lineElements[0].length() > 22 || lineElements[2].length() > 22) {
+    public boolean checkLengthOfNumbers(List<String> lineElements) {
+        if (lineElements.get(0).length() > 22 || lineElements.get(2).length() > 22) {
             return false;
         } else {
             return true;
