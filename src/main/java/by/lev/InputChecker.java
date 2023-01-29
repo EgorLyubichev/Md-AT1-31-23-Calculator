@@ -4,17 +4,19 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import static by.lev.RegularExpression.BY_ZERO;
+import static by.lev.RegularExpression.COMMON_EXPRESSION;
+
 public class InputChecker {
 
     public boolean checkInput(String line) {
-        Pattern pattern = Pattern.compile(
-                "[\\-\\+]?[\\d]+[.]?[\\d]*[\\+\\-\\*\\/]{1}[\\-\\+]?[\\d]+[.]?[\\d]*");
+        Pattern pattern = Pattern.compile(COMMON_EXPRESSION.getExpression());
         Matcher matcher = pattern.matcher(line);
         return matcher.matches();
     }
 
     public boolean checkNotByZero(String line) {
-        Pattern pattern = Pattern.compile("[/][-]?[0]{1,}[.]?$");
+        Pattern pattern = Pattern.compile(BY_ZERO.getExpression());
         Matcher matcher = pattern.matcher(line);
         return !matcher.find();
     }

@@ -8,18 +8,18 @@ public class LineConverterTest {
     LineConverter converter = new LineConverter();
 
     @Test
-    public void input_Plus375Point375SomethingElse_expect_375Point375(){
-        String input = "+375.375SomethingElse";
+    public void input_Plus375Point375Plus2_expect_375Point375(){
+        String input = "+375.375+2";
         converter.getExpressionElementsFromLine(input);
-        converter.setNum1();
+        converter.setElements();
         Assert.assertEquals(converter.getNum1(), 375.375);
     }
 
     @Test
-    public void input_Plus375Point375PlusSomethingElse_expect_Plus(){
-        String input = "+375.375+SomethingElse";
+    public void input_Plus375Point375Plus2_expect_Plus(){
+        String input = "+375.375+2";
         converter.getExpressionElementsFromLine(input);
-        converter.setOperator();
+        converter.setElements();
         Assert.assertEquals(converter.getOperator(), '+');
     }
 
@@ -27,7 +27,7 @@ public class LineConverterTest {
     public void input_375Point375PlusMinus123Point123_expect_123Point123(){
         String input = "375.375+-123.123";
         converter.getExpressionElementsFromLine(input);
-        converter.setNum2();
+        converter.setElements();
         Assert.assertEquals(converter.getNum2(), -123.123);
     }
 }

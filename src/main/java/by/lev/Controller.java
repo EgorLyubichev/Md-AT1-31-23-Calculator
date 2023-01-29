@@ -7,7 +7,7 @@ public class Controller {
 
     InputConvertable inputConverter = new InputConverter();
     InputChecker checker = new InputChecker();
-    LineConverter lineConverter = new LineConverter();
+    LineConvertable lineConverter = new LineConverter();
     Countable calculator = new Calculator();
 
     public void getResult() {
@@ -15,7 +15,7 @@ public class Controller {
         System.out.print("Пример: ");
         String expression = scanInput();
 
-        if (expression.trim().equalsIgnoreCase("q")){
+        if (expression.trim().equalsIgnoreCase("q")) {
             System.exit(0);
         }
 
@@ -35,13 +35,13 @@ public class Controller {
             System.out.println("Числа слишком длинные для вычисления!\nПопробуйте снова\n- - - - -");
             getResult();
         } else {
-            lineConverter.setNum1();
-            lineConverter.setNum2();
-            lineConverter.setOperator();
+            lineConverter.setElements();
         }
-        Double result = calculator.doAction(lineConverter.getNum1(),
+        Double result = calculator.doAction(
+                lineConverter.getNum1(),
                 lineConverter.getNum2(),
-                lineConverter.getOperator());
+                lineConverter.getOperator()
+        );
         if (checker.equalResultValueAndDoubleMaxValue(result)) {
             System.out.println(result + "\n- - - - -");
             getResult();
@@ -55,6 +55,4 @@ public class Controller {
         Scanner scanner = new Scanner(System.in);
         return scanner.nextLine();
     }
-
-
 }

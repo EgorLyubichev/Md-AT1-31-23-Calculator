@@ -42,13 +42,13 @@ III. InputChecker check list:
         expect: false
 
 IV. Line Converter check list:
-    1.  Input: '+375.375SomethingElse'
+    1.  Input: '+375.375+2'
         Methods:
         1) getExpressionElementsFromLine(String line)
         2) setNum1
         3) getNum1
         Expect: '375.375'
-    2.  Input: '+375.375+SomethingElse'
+    2.  Input: '+375.375+2'
         Methods:
         1) getExpressionElementsFromLine(String line)
         2) setOperator
