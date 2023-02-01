@@ -11,7 +11,7 @@ import static java.util.regex.Pattern.compile;
 import static by.lev.RegularExpression.THE_FIRST_VALUE;
 
 @Getter
-public class LineConverter implements LineConvertable {
+public class LineConverter implements Convertable {
 
     private double num1;
     private double num2;

@@ -7,7 +7,7 @@ public class Controller {
 
 
     InputChecker checker = new InputChecker();
-    LineConvertable lineConverter = new LineConverter();
+    Convertable lineConverter = new LineConverter();
     Countable calculator = new Calculator();
 
     public void getResult() {

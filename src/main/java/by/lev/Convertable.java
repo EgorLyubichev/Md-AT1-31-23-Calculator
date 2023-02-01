@@ -1,11 +1,9 @@
 package by.lev;
 
 
-import lombok.Getter;
-
 import java.util.List;
 
-public interface LineConvertable {
+public interface Convertable {
     double getNum1();
     double getNum2();
     char getOperator();

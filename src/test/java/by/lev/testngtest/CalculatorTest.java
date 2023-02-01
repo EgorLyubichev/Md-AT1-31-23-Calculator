@@ -1,5 +1,7 @@
-package by.lev;
+package by.lev.testngtest;
 
+import by.lev.Calculator;
+import by.lev.Countable;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
