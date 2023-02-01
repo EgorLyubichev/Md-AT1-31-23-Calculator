@@ -13,11 +13,6 @@ import static by.lev.RegularExpression.THE_FIRST_VALUE;
 @Getter
 public class LineConverter implements Convertable {
 
-    private double num1;
-    private double num2;
-    private char operator;
-    private final List<String> lineElements = new ArrayList<>(3);
-
     public String getCorrectLine(String inputLine) {
         return inputLine
                 .replace(" ", "")
@@ -26,13 +21,8 @@ public class LineConverter implements Convertable {
                 .replace(")", "");
     }
 
-    public void setElements() {
-        this.num1 = Double.parseDouble(lineElements.get(0));
-        this.operator = lineElements.get(1).charAt(0);
-        this.num2 = Double.parseDouble(lineElements.get(2));
-    }
-
-    public void getExpressionElementsFromLine(String line) {
+    public List<String> getExpressionElementsFromLine(String line) {
+        List<String> lineElements = new ArrayList<>(3);
         Pattern pattern = compile(THE_FIRST_VALUE.getExpression());
         Matcher matcher = pattern.matcher(line);
         int firstEnd = -1;
@@ -42,5 +32,15 @@ public class LineConverter implements Convertable {
         lineElements.add(line.substring(0, (firstEnd)));
         lineElements.add(line.substring(firstEnd, firstEnd + 1));
         lineElements.add(line.substring(firstEnd + 1));
+        return lineElements;
+    }
+
+    public Expression setElements(List<String> lineElements) {
+        Expression expression = Expression.builder()
+                .num1(Double.parseDouble(lineElements.get(0)))
+                .operator(lineElements.get(1).charAt(0))
+                .num2(Double.parseDouble(lineElements.get(2)))
+                .build();
+        return expression;
     }
 }

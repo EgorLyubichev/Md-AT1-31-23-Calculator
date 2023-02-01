@@ -13,35 +13,29 @@ public class Controller {
     public void getResult() {
         System.out.println("Выход: 'Q', 'Enter'.");
         System.out.print("Пример: ");
-        String expression = scanInput();
+        String input = scanInput();
 
-        if (expression.trim().equalsIgnoreCase("q")) {
+        if (input.trim().equalsIgnoreCase("q")) {
             System.exit(0);
         }
 
-        String formatExpression = lineConverter.getCorrectLine(expression);
+        String correctLine = lineConverter.getCorrectLine(input);
 
-        if (!checker.checkInput(formatExpression)) {
+        if (!checker.checkInput(correctLine)) {
             System.out.println("В выражении допущена ошибка!\nПопробуйте снова\n- - - - -");
             getResult();
         }
-        if (!checker.checkNotByZero(formatExpression)) {
+        if (!checker.checkNotByZero(correctLine)) {
             System.out.println("На ноль делить нельзя!\nПопробуйте снова\n- - - - -");
             getResult();
         }
-        lineConverter.getExpressionElementsFromLine(formatExpression);
-        List<String> lineElements = lineConverter.getLineElements();
+        List<String> lineElements = lineConverter.getExpressionElementsFromLine(correctLine);
         if (!checker.checkLengthOfNumbers(lineElements)) {
             System.out.println("Числа слишком длинные для вычисления!\nПопробуйте снова\n- - - - -");
             getResult();
-        } else {
-            lineConverter.setElements();
         }
-        Double result = calculator.doAction(
-                lineConverter.getNum1(),
-                lineConverter.getNum2(),
-                lineConverter.getOperator()
-        );
+        Expression expression = lineConverter.setElements(lineElements);
+        Double result = calculator.doAction(expression);
         if (checker.equalResultValueAndDoubleMaxValue(result)) {
             System.out.println(result + "\n- - - - -");
             getResult();
