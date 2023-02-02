@@ -1,12 +1,5 @@
 package by.lev.testngtest;
 
-import by.lev.Calculator;
-import by.lev.Countable;
-import org.testng.Assert;
-import org.testng.annotations.Test;
-
-
-
 public class CalculatorTest {
 
 //    Countable calculator = new Calculator();

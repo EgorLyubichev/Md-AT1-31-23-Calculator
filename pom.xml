@@ -19,13 +19,13 @@
 
   <dependencies>
 
-    <!-- https://mvnrepository.com/artifact/org.testng/testng -->
-    <dependency>
-      <groupId>org.testng</groupId>
-      <artifactId>testng</artifactId>
-      <version>7.7.1</version>
-      <scope>test</scope>
-    </dependency>
+<!--    &lt;!&ndash; https://mvnrepository.com/artifact/org.testng/testng &ndash;&gt;-->
+<!--    <dependency>-->
+<!--      <groupId>org.testng</groupId>-->
+<!--      <artifactId>testng</artifactId>-->
+<!--      <version>7.7.1</version>-->
+<!--      <scope>test</scope>-->
+<!--    </dependency>-->
 
     <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
     <dependency>

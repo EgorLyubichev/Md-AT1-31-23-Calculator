@@ -1,9 +1,5 @@
 package by.lev.testngtest;
 
-import by.lev.LineConverter;
-import org.testng.Assert;
-import org.testng.annotations.Test;
-
 public class LineConverterTest {
 
 //    LineConverter converter = new LineConverter();
