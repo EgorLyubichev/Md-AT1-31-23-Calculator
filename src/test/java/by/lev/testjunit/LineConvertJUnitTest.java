@@ -39,6 +39,9 @@ public class LineConvertJUnitTest {
         assertLinesMatch(expected, converter.getExpressionElementsFromLine(expression));
     }
 
+    /**
+     * The case if by/lev/Expression.java have methods Equals & HashCode
+     */
     @Test
     public void testMethodSetElements(){
         Expression expression = new Expression(11.5, 22.6, '/');
@@ -46,6 +49,9 @@ public class LineConvertJUnitTest {
         assertEquals(expression, converter.setElements(elements));
     }
 
+    /**
+     * The case if by/lev/Expression.java don't have methods Equals & HashCode
+     */
     @Test
     public void testNum1OfExpressionAfterSetElements(){
         Double expected = 11.5;

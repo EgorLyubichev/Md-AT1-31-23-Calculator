@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6dbb63b1-982f-4728-8f04-a20bd3344c8f" name="Changes" comment="Created new Class &quot;Expression&quot; and changed a lot into the project.">
+    <list default="true" id="6dbb63b1-982f-4728-8f04-a20bd3344c8f" name="Changes" comment="Added ControllerInterface.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/Expression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/Expression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/by/lev/testjunit/CalculatorJUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/lev/testjunit/CalculatorJUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/Checkable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/Checkable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/InputChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/InputChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/manual.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/manual.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/by/lev/testjunit/InputCheckerJUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/lev/testjunit/InputCheckerJUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/by/lev/testjunit/LineConvertJUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/lev/testjunit/LineConvertJUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/by/lev/testngtest/InputCheckerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/lev/testngtest/InputCheckerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -59,8 +63,8 @@
       <recent name="C:\Users\user\Desktop\QA course\projects\homework-calculator\src\test\java\by\lev\testngtest" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LineConvertJUnitTest.testNum2OfExpressionAfterSetElements">
-    <configuration name="LineConvertJUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.InputCheckerJUnitTest">
+    <configuration name="InputCheckerJUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="homework-calculator" />
       <extension name="coverage">
         <pattern>
@@ -69,14 +73,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="by.lev.testjunit" />
-      <option name="MAIN_CLASS_NAME" value="by.lev.testjunit.LineConvertJUnitTest" />
-      <option name="METHOD_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="by.lev.testjunit.InputCheckerJUnitTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LineConvertJUnitTest.testMethodSetElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InputCheckerJUnitTest.testLengthIsBiggerTheAllowedValueOfTheFirstElement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="homework-calculator" />
       <extension name="coverage">
         <pattern>
@@ -85,14 +88,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="by.lev.testjunit" />
-      <option name="MAIN_CLASS_NAME" value="by.lev.testjunit.LineConvertJUnitTest" />
-      <option name="METHOD_NAME" value="testMethodSetElements" />
+      <option name="MAIN_CLASS_NAME" value="by.lev.testjunit.InputCheckerJUnitTest" />
+      <option name="METHOD_NAME" value="testLengthIsBiggerTheAllowedValueOfTheFirstElement" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LineConvertJUnitTest.testNum1OfExpressionAfterSetElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InputCheckerJUnitTest.testLengthIsEqualsTheAllowedValueOfTheFirstElement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="homework-calculator" />
       <extension name="coverage">
         <pattern>
@@ -101,14 +104,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="by.lev.testjunit" />
-      <option name="MAIN_CLASS_NAME" value="by.lev.testjunit.LineConvertJUnitTest" />
-      <option name="METHOD_NAME" value="testNum1OfExpressionAfterSetElements" />
+      <option name="MAIN_CLASS_NAME" value="by.lev.testjunit.InputCheckerJUnitTest" />
+      <option name="METHOD_NAME" value="testLengthIsEqualsTheAllowedValueOfTheFirstElement" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LineConvertJUnitTest.testNum2OfExpressionAfterSetElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InputCheckerJUnitTest.testLengthIsLessThanTheAllowedValueOfTheFirstElement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="homework-calculator" />
       <extension name="coverage">
         <pattern>
@@ -117,14 +120,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="by.lev.testjunit" />
-      <option name="MAIN_CLASS_NAME" value="by.lev.testjunit.LineConvertJUnitTest" />
-      <option name="METHOD_NAME" value="testNum2OfExpressionAfterSetElements" />
+      <option name="MAIN_CLASS_NAME" value="by.lev.testjunit.InputCheckerJUnitTest" />
+      <option name="METHOD_NAME" value="testLengthIsLessThanTheAllowedValueOfTheFirstElement" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LineConvertJUnitTest.testOperatorOfExpressionAfterSetElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InputCheckerJUnitTest.testResultLengthBiggerAllowedValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="homework-calculator" />
       <extension name="coverage">
         <pattern>
@@ -133,27 +136,27 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="by.lev.testjunit" />
-      <option name="MAIN_CLASS_NAME" value="by.lev.testjunit.LineConvertJUnitTest" />
-      <option name="METHOD_NAME" value="testOperatorOfExpressionAfterSetElements" />
+      <option name="MAIN_CLASS_NAME" value="by.lev.testjunit.InputCheckerJUnitTest" />
+      <option name="METHOD_NAME" value="testResultLengthBiggerAllowedValue" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.LineConvertJUnitTest.testMethodSetElements" />
-      <item itemvalue="JUnit.LineConvertJUnitTest.testNum1OfExpressionAfterSetElements" />
-      <item itemvalue="JUnit.LineConvertJUnitTest.testNum2OfExpressionAfterSetElements" />
-      <item itemvalue="JUnit.LineConvertJUnitTest.testOperatorOfExpressionAfterSetElements" />
-      <item itemvalue="JUnit.LineConvertJUnitTest" />
+      <item itemvalue="JUnit.InputCheckerJUnitTest" />
+      <item itemvalue="JUnit.InputCheckerJUnitTest.testLengthIsBiggerTheAllowedValueOfTheFirstElement" />
+      <item itemvalue="JUnit.InputCheckerJUnitTest.testLengthIsEqualsTheAllowedValueOfTheFirstElement" />
+      <item itemvalue="JUnit.InputCheckerJUnitTest.testLengthIsLessThanTheAllowedValueOfTheFirstElement" />
+      <item itemvalue="JUnit.InputCheckerJUnitTest.testResultLengthBiggerAllowedValue" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LineConvertJUnitTest.testNum2OfExpressionAfterSetElements" />
-        <item itemvalue="JUnit.LineConvertJUnitTest.testOperatorOfExpressionAfterSetElements" />
-        <item itemvalue="JUnit.LineConvertJUnitTest.testNum1OfExpressionAfterSetElements" />
-        <item itemvalue="JUnit.LineConvertJUnitTest.testMethodSetElements" />
-        <item itemvalue="JUnit.LineConvertJUnitTest" />
+        <item itemvalue="JUnit.InputCheckerJUnitTest" />
+        <item itemvalue="JUnit.InputCheckerJUnitTest.testResultLengthBiggerAllowedValue" />
+        <item itemvalue="JUnit.InputCheckerJUnitTest.testLengthIsLessThanTheAllowedValueOfTheFirstElement" />
+        <item itemvalue="JUnit.InputCheckerJUnitTest.testLengthIsEqualsTheAllowedValueOfTheFirstElement" />
+        <item itemvalue="JUnit.InputCheckerJUnitTest.testLengthIsBiggerTheAllowedValueOfTheFirstElement" />
       </list>
     </recent_temporary>
   </component>
@@ -278,7 +281,35 @@
       <option name="project" value="LOCAL" />
       <updated>1675283466288</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added LineConvertJUnitTest.java">
+      <created>1675322517268</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1675322517268</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Added LineConvertJUnitTest.java">
+      <created>1675322580412</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1675322580412</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Added Checkable.java">
+      <created>1675322934409</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1675322934409</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Added ControllerInterface.java">
+      <created>1675323189598</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1675323189598</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -309,7 +340,10 @@
     <MESSAGE value="Refactored LineConverter&#10;and InputConverter.java (deleted)" />
     <MESSAGE value="Pom.xml -&gt; added junit-jupiter-engine, added junit-jupiter-params;&#10;added testjunit package;&#10;added CalculatorJUnitTest.java" />
     <MESSAGE value="Created new Class &quot;Expression&quot; and changed a lot into the project." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created new Class &quot;Expression&quot; and changed a lot into the project." />
+    <MESSAGE value="Added LineConvertJUnitTest.java" />
+    <MESSAGE value="Added Checkable.java" />
+    <MESSAGE value="Added ControllerInterface.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added ControllerInterface.java" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/homework_calculator$TestsWithCoverage.ic" NAME="TestsWithCoverage Coverage Results" MODIFIED="1675275653805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

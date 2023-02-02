@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 import static by.lev.RegularExpression.BY_ZERO;
 import static by.lev.RegularExpression.COMMON_EXPRESSION;
 
-public class InputChecker implements Checkable{
+public class InputChecker implements Checkable {
 
     public boolean checkInput(String line) {
         Pattern pattern = Pattern.compile(COMMON_EXPRESSION.getExpression());
@@ -22,10 +22,12 @@ public class InputChecker implements Checkable{
     }
 
     public boolean checkLengthOfNumbers(List<String> lineElements) {
-        return lineElements.get(0).length() <= 22 && lineElements.get(2).length() <= 22;
+        return Double.parseDouble(lineElements.get(0)) <= 1_000_000_000_000.
+                &&
+                Double.parseDouble(lineElements.get(2)) <= 1_000_000_000_000.;
     }
 
-    public boolean equalResultValueAndDoubleMaxValue(double result){
-        return (result <= Double.MAX_VALUE);
+    public boolean checkResultValueNoBiggerThanAllowedValue(double result) {
+        return (result <= 10_000_000_000_000.);
     }
 }

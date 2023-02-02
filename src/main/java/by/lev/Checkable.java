@@ -6,5 +6,5 @@ public interface Checkable {
     boolean checkInput(String line);
     boolean checkNotByZero(String line);
     boolean checkLengthOfNumbers(List<String> lineElements);
-    boolean equalResultValueAndDoubleMaxValue(double result);
+    boolean checkResultValueNoBiggerThanAllowedValue(double result);
 }

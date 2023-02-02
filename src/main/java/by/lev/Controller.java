@@ -36,7 +36,7 @@ public class Controller implements ControllerInterface {
         }
         Expression expression = lineConverter.setElements(lineElements);
         Double result = calculator.doAction(expression);
-        if (checker.equalResultValueAndDoubleMaxValue(result)) {
+        if (checker.checkResultValueNoBiggerThanAllowedValue(result)) {
             System.out.println(result + "\n- - - - -");
             getResult();
         } else {

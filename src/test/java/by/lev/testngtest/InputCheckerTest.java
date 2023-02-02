@@ -4,9 +4,7 @@ import by.lev.InputChecker;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 public class InputCheckerTest {
@@ -72,14 +70,16 @@ public class InputCheckerTest {
 
     @Test
     public void input_MaxValueOfDouble_method_equalResultValueAndDoubleMaxValue_expect_true() {
-        Double input = Double.MAX_VALUE;
-        Assert.assertTrue(checker.equalResultValueAndDoubleMaxValue(input));
+        Double input = Double.parseDouble(String.valueOf(Long.MAX_VALUE));
+        Assert.assertTrue(checker.checkResultValueNoBiggerThanAllowedValue(input));
     }
 
     @Test
     public void input_MoreThanMaxValueOfDouble_method_equalResultValueAndDoubleMaxValue_expect_false() {
-        Double input = Double.MAX_VALUE + Double.MAX_VALUE;
-        Assert.assertFalse(checker.equalResultValueAndDoubleMaxValue(input));
+        double num1 = Double.parseDouble(String.valueOf(Long.MAX_VALUE));
+        double num2 = 1;
+        double res = num1 + num2;
+        Assert.assertFalse(checker.checkResultValueNoBiggerThanAllowedValue(res));
     }
 
 
