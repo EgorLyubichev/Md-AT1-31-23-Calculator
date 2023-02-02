@@ -2,6 +2,7 @@ package by.lev;
 
 public class App {
     public static void main(String[] args) {
-        new Controller().getResult();
+        ControllerInterface controller = new Controller();
+        controller.getResult();
     }
 }

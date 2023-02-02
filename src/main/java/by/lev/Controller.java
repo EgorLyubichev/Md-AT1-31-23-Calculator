@@ -3,10 +3,10 @@ package by.lev;
 import java.util.List;
 import java.util.Scanner;
 
-public class Controller {
+public class Controller implements ControllerInterface {
 
 
-    InputChecker checker = new InputChecker();
+    Checkable checker = new InputChecker();
     Convertable lineConverter = new LineConverter();
     Countable calculator = new Calculator();
 
