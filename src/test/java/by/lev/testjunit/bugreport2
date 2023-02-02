@@ -1,0 +1,26 @@
+1) ID 2
+
+2) Title: При вводе примера '1/0.0', выпадает ArithmeticException.
+
+3) Project: homework-calculator
+repository: https://github.com/EgorLyubichev/Md-AT1-31-23-Calculator
+
+4) Version: 1.0-SNAPSHOT
+
+5) Importance: S3
+
+6) Priority: P1
+
+7) Status: open.
+
+8) Author: Egor Lyubichev
+
+9) Executor: Egor Lyubichev
+
+10) Steps to playback:
+    1) Run App
+    2) Input 1/0.0
+
+11) Result: Exception in thread "main" java.lang.ArithmeticException
+
+12) Expected: message "На ноль делить нельзя"
