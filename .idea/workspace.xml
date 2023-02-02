@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6dbb63b1-982f-4728-8f04-a20bd3344c8f" name="Changes" comment="Added InputCheckerTest.java&#10;Changed allowed values of input values and result value">
-      <change afterPath="$PROJECT_DIR$/src/test/java/by/lev/testjunit/bugreport2" afterDir="false" />
-    </list>
+    <list default="true" id="6dbb63b1-982f-4728-8f04-a20bd3344c8f" name="Changes" comment="Bug report 2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -306,7 +304,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675332597853</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Bug report 2">
+      <created>1675334287329</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1675334287329</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -341,7 +346,8 @@
     <MESSAGE value="Added Checkable.java" />
     <MESSAGE value="Added ControllerInterface.java" />
     <MESSAGE value="Added InputCheckerTest.java&#10;Changed allowed values of input values and result value" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added InputCheckerTest.java&#10;Changed allowed values of input values and result value" />
+    <MESSAGE value="Bug report 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug report 2" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/homework_calculator$TestsWithCoverage.ic" NAME="TestsWithCoverage Coverage Results" MODIFIED="1675275653805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
