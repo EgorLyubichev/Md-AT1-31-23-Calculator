@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6dbb63b1-982f-4728-8f04-a20bd3344c8f" name="Changes" comment="Pom.xml -&gt; added junit-jupiter-engine, added junit-jupiter-params;&#10;added testjunit package;&#10;added CalculatorJUnitTest.java">
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/lev/Expression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/by/lev/testjunit/LineConvertJUnitTest.java" afterDir="false" />
+    <list default="true" id="6dbb63b1-982f-4728-8f04-a20bd3344c8f" name="Changes" comment="Created new Class &quot;Expression&quot; and changed a lot into the project.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/Convertable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/Convertable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/Countable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/Countable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/LineConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/LineConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/by/lev/testngtest/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/lev/testngtest/CalculatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/by/lev/testngtest/LineConverterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/lev/testngtest/LineConverterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/Expression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/Expression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/by/lev/testjunit/CalculatorJUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/lev/testjunit/CalculatorJUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/by/lev/testjunit/LineConvertJUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/lev/testjunit/LineConvertJUnitTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,72 +42,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "last_opened_file_path": "C:/Users/user/Desktop/QA course/projects/gitTest",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/QA course/projects/gitTest&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\Desktop\QA course\projects\homework-calculator\src\test\java\by\lev\testngtest" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LineConvertJUnitTest">
-    <configuration name="CalculatorJUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="homework-calculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="by.lev.testjunit.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="by.lev.testjunit" />
-      <option name="MAIN_CLASS_NAME" value="by.lev.testjunit.CalculatorJUnitTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CalculatorJUnitTest.testExpectedArithmeticException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="homework-calculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="by.lev.testjunit.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="by.lev.testjunit" />
-      <option name="MAIN_CLASS_NAME" value="by.lev.testjunit.CalculatorJUnitTest" />
-      <option name="METHOD_NAME" value="testExpectedArithmeticException" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CalculatorJUnitTest.testSimpleAction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="homework-calculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="by.lev.testjunit.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="by.lev.testjunit" />
-      <option name="MAIN_CLASS_NAME" value="by.lev.testjunit.CalculatorJUnitTest" />
-      <option name="METHOD_NAME" value="testSimpleAction(double,double,double,char)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.LineConvertJUnitTest.testNum2OfExpressionAfterSetElements">
     <configuration name="LineConvertJUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="homework-calculator" />
       <extension name="coverage">
@@ -131,7 +76,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LineConvertJUnitTest.testGettingTheElementsFromLine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LineConvertJUnitTest.testMethodSetElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="homework-calculator" />
       <extension name="coverage">
         <pattern>
@@ -141,26 +86,74 @@
       </extension>
       <option name="PACKAGE_NAME" value="by.lev.testjunit" />
       <option name="MAIN_CLASS_NAME" value="by.lev.testjunit.LineConvertJUnitTest" />
-      <option name="METHOD_NAME" value="testGettingTheElementsFromLine" />
+      <option name="METHOD_NAME" value="testMethodSetElements" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LineConvertJUnitTest.testNum1OfExpressionAfterSetElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="homework-calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.lev.testjunit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="by.lev.testjunit" />
+      <option name="MAIN_CLASS_NAME" value="by.lev.testjunit.LineConvertJUnitTest" />
+      <option name="METHOD_NAME" value="testNum1OfExpressionAfterSetElements" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LineConvertJUnitTest.testNum2OfExpressionAfterSetElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="homework-calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.lev.testjunit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="by.lev.testjunit" />
+      <option name="MAIN_CLASS_NAME" value="by.lev.testjunit.LineConvertJUnitTest" />
+      <option name="METHOD_NAME" value="testNum2OfExpressionAfterSetElements" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LineConvertJUnitTest.testOperatorOfExpressionAfterSetElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="homework-calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.lev.testjunit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="by.lev.testjunit" />
+      <option name="MAIN_CLASS_NAME" value="by.lev.testjunit.LineConvertJUnitTest" />
+      <option name="METHOD_NAME" value="testOperatorOfExpressionAfterSetElements" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.LineConvertJUnitTest.testMethodSetElements" />
+      <item itemvalue="JUnit.LineConvertJUnitTest.testNum1OfExpressionAfterSetElements" />
+      <item itemvalue="JUnit.LineConvertJUnitTest.testNum2OfExpressionAfterSetElements" />
+      <item itemvalue="JUnit.LineConvertJUnitTest.testOperatorOfExpressionAfterSetElements" />
       <item itemvalue="JUnit.LineConvertJUnitTest" />
-      <item itemvalue="JUnit.LineConvertJUnitTest.testGettingTheElementsFromLine" />
-      <item itemvalue="JUnit.CalculatorJUnitTest" />
-      <item itemvalue="JUnit.CalculatorJUnitTest.testExpectedArithmeticException" />
-      <item itemvalue="JUnit.CalculatorJUnitTest.testSimpleAction" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LineConvertJUnitTest.testNum2OfExpressionAfterSetElements" />
+        <item itemvalue="JUnit.LineConvertJUnitTest.testOperatorOfExpressionAfterSetElements" />
+        <item itemvalue="JUnit.LineConvertJUnitTest.testNum1OfExpressionAfterSetElements" />
+        <item itemvalue="JUnit.LineConvertJUnitTest.testMethodSetElements" />
         <item itemvalue="JUnit.LineConvertJUnitTest" />
-        <item itemvalue="JUnit.LineConvertJUnitTest.testGettingTheElementsFromLine" />
-        <item itemvalue="JUnit.CalculatorJUnitTest" />
-        <item itemvalue="JUnit.CalculatorJUnitTest.testExpectedArithmeticException" />
-        <item itemvalue="JUnit.CalculatorJUnitTest.testSimpleAction" />
       </list>
     </recent_temporary>
   </component>
@@ -278,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675273963626</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Created new Class &quot;Expression&quot; and changed a lot into the project.">
+      <created>1675283466288</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1675283466288</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -308,7 +308,8 @@
     <MESSAGE value="Refactored LineConverter&#10;Added LineCon&#10;Added RegularExpression.java" />
     <MESSAGE value="Refactored LineConverter&#10;and InputConverter.java (deleted)" />
     <MESSAGE value="Pom.xml -&gt; added junit-jupiter-engine, added junit-jupiter-params;&#10;added testjunit package;&#10;added CalculatorJUnitTest.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pom.xml -&gt; added junit-jupiter-engine, added junit-jupiter-params;&#10;added testjunit package;&#10;added CalculatorJUnitTest.java" />
+    <MESSAGE value="Created new Class &quot;Expression&quot; and changed a lot into the project." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created new Class &quot;Expression&quot; and changed a lot into the project." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/homework_calculator$TestsWithCoverage.ic" NAME="TestsWithCoverage Coverage Results" MODIFIED="1675275653805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
