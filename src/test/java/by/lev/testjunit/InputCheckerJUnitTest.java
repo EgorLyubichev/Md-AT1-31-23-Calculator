@@ -129,5 +129,4 @@ public class InputCheckerJUnitTest {
         assertTrue(checker.checkResultValueNoBiggerThanAllowedValue(result));
     }
 
-
 }
