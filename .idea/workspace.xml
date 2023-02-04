@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6dbb63b1-982f-4728-8f04-a20bd3344c8f" name="Changes" comment="Fixed bug from Bug report 2">
+    <list default="true" id="6dbb63b1-982f-4728-8f04-a20bd3344c8f" name="Changes" comment="Cleaning">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/Countable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/by/lev/testjunit/CalculatorJUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/lev/testjunit/CalculatorJUnitTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +35,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../../../apache-maven-3.8.2" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -39,20 +51,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/QA course/projects/gitTest&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "last_opened_file_path": "C:/Users/user/Desktop/QA course/projects/homework-calculator",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "terminal"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Desktop\QA course\projects\homework-calculator\src\test\java\by\lev\testjunit\bugreports" />
       <recent name="C:\Users\user\Desktop\QA course\projects\homework-calculator\src\test\java\by\lev\testngtest" />
     </key>
   </component>
@@ -70,6 +83,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CalculatorJUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="homework-calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.lev.testjunit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="by.lev.testjunit" />
+      <option name="MAIN_CLASS_NAME" value="by.lev.testjunit.CalculatorJUnitTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="InputCheckerJUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="homework-calculator" />
       <extension name="coverage">
@@ -80,73 +109,39 @@
       </extension>
       <option name="PACKAGE_NAME" value="by.lev.testjunit" />
       <option name="MAIN_CLASS_NAME" value="by.lev.testjunit.InputCheckerJUnitTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InputCheckerJUnitTest.testLengthIsEqualsTheAllowedValueOfTheFirstElement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestsWithCoverage" type="JUnit" factoryName="JUnit">
       <module name="homework-calculator" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.lev.testjunit.*" />
+          <option name="PATTERN" value="by.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="by.lev.testjunit" />
-      <option name="MAIN_CLASS_NAME" value="by.lev.testjunit.InputCheckerJUnitTest" />
-      <option name="METHOD_NAME" value="testLengthIsEqualsTheAllowedValueOfTheFirstElement" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InputCheckerJUnitTest.testLengthIsLessThanTheAllowedValueOfTheFirstElement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="homework-calculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="by.lev.testjunit.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="by.lev.testjunit" />
-      <option name="MAIN_CLASS_NAME" value="by.lev.testjunit.InputCheckerJUnitTest" />
-      <option name="METHOD_NAME" value="testLengthIsLessThanTheAllowedValueOfTheFirstElement" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InputCheckerJUnitTest.testResultLengthBiggerAllowedValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="homework-calculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="by.lev.testjunit.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="by.lev.testjunit" />
-      <option name="MAIN_CLASS_NAME" value="by.lev.testjunit.InputCheckerJUnitTest" />
-      <option name="METHOD_NAME" value="testResultLengthBiggerAllowedValue" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="by" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.App" />
+      <item itemvalue="JUnit.TestsWithCoverage" />
+      <item itemvalue="JUnit.CalculatorJUnitTest" />
       <item itemvalue="JUnit.InputCheckerJUnitTest" />
-      <item itemvalue="JUnit.InputCheckerJUnitTest.testLengthIsEqualsTheAllowedValueOfTheFirstElement" />
-      <item itemvalue="JUnit.InputCheckerJUnitTest.testLengthIsLessThanTheAllowedValueOfTheFirstElement" />
-      <item itemvalue="JUnit.InputCheckerJUnitTest.testResultLengthBiggerAllowedValue" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CalculatorJUnitTest" />
         <item itemvalue="JUnit.InputCheckerJUnitTest" />
         <item itemvalue="Application.App" />
-        <item itemvalue="JUnit.InputCheckerJUnitTest.testResultLengthBiggerAllowedValue" />
-        <item itemvalue="JUnit.InputCheckerJUnitTest.testLengthIsLessThanTheAllowedValueOfTheFirstElement" />
-        <item itemvalue="JUnit.InputCheckerJUnitTest.testLengthIsEqualsTheAllowedValueOfTheFirstElement" />
       </list>
     </recent_temporary>
   </component>
@@ -327,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675335878263</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Cleaning">
+      <created>1675414511291</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1675414511291</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -364,16 +366,24 @@
     <MESSAGE value="Added InputCheckerTest.java&#10;Changed allowed values of input values and result value" />
     <MESSAGE value="Bug report 2" />
     <MESSAGE value="Fixed bug from Bug report 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug from Bug report 2" />
+    <MESSAGE value="Cleaning" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaning" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/homework_calculator$TestsWithCoverage.ic" NAME="TestsWithCoverage Coverage Results" MODIFIED="1675275653805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/homework_calculator$TestsWithCoverage.ic" NAME="TestsWithCoverage Coverage Results" MODIFIED="1675513493026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>by.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/homework_calculator$CalculatorJUnitTest.ic" NAME="CalculatorJUnitTest Coverage Results" MODIFIED="1675274939949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/homework_calculator$CalculatorJUnitTest.ic" NAME="CalculatorJUnitTest Coverage Results" MODIFIED="1675512985001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>by.lev.testjunit.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/homework_calculator$LineConvertJUnitTest.ic" NAME="LineConvertJUnitTest Coverage Results" MODIFIED="1675279605056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>by.lev.testjunit.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/homework_calculator$AllTests.ic" NAME="AllTests Coverage Results" MODIFIED="1675512577889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>by.lev.testjunit.*</FILTER>
     </SUITE>
   </component>

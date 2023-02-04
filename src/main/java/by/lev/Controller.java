@@ -8,7 +8,6 @@ public class Controller implements ControllerInterface {
 
     Checkable checker = new InputChecker();
     Convertable lineConverter = new LineConverter();
-    Countable calculator = new Calculator();
 
     public void getResult() {
         System.out.println("Выход: 'Q', 'Enter'.");
@@ -35,7 +34,7 @@ public class Controller implements ControllerInterface {
             getResult();
         }
         Expression expression = lineConverter.setElements(lineElements);
-        Double result = calculator.doAction(expression);
+        Double result = Calculator.doAction(expression);
         if (checker.checkResultValueNoBiggerThanAllowedValue(result)) {
             System.out.println(result + "\n- - - - -");
             getResult();

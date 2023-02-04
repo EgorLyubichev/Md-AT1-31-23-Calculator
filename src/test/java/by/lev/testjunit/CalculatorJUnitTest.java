@@ -1,14 +1,12 @@
 package by.lev.testjunit;
 
 import by.lev.Calculator;
-import by.lev.Countable;
 import by.lev.Expression;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-import java.util.EmptyStackException;
 import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -16,8 +14,6 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.params.provider.Arguments.arguments;
 
 public class CalculatorJUnitTest {
-
-    Countable calculator = new Calculator();
 
     static Stream<Arguments> getParams() {
         return Stream.of(
@@ -41,16 +37,17 @@ public class CalculatorJUnitTest {
         );
     }
 
+
     @ParameterizedTest
     @MethodSource("getParams")
     public void testSimpleAction(double expected, Expression expression) {
-        assertEquals(expected, calculator.doAction(expression));
+        assertEquals(expected, Calculator.doAction(expression));
     }
 
     @Test
     public void testExpectedArithmeticException() {
         assertThrows(ArithmeticException.class,
-                () -> {calculator.doAction(new Expression(2, 0, '/'));
+                () -> {Calculator.doAction(new Expression(2, 0, '/'));
         });
     }
 }

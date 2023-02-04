@@ -2,9 +2,9 @@ package by.lev;
 
 import java.util.function.BiFunction;
 
-public class Calculator implements Countable {
+public class Calculator {
 
-    public Double doAction(Expression expression) {
+    public static Double doAction(Expression expression) {
 
         BiFunction<Double, Double, Double> function;
         Double result = null;
