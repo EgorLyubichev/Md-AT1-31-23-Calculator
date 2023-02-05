@@ -2,6 +2,7 @@ package by.lev.testjunit;
 
 import by.lev.Calculator;
 import by.lev.Expression;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -40,11 +41,13 @@ public class CalculatorJUnitTest {
 
     @ParameterizedTest
     @MethodSource("getParams")
+    @Tag("TagExample")
     public void testSimpleAction(double expected, Expression expression) {
         assertEquals(expected, Calculator.doAction(expression));
     }
 
     @Test
+    @Tag("TagExample")
     public void testExpectedArithmeticException() {
         assertThrows(ArithmeticException.class,
                 () -> {Calculator.doAction(new Expression(2, 0, '/'));

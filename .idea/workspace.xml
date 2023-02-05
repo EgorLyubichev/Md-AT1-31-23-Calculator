@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6dbb63b1-982f-4728-8f04-a20bd3344c8f" name="Changes" comment="Cleaning">
+    <list default="true" id="6dbb63b1-982f-4728-8f04-a20bd3344c8f" name="Changes" comment="Made Calculator.doAction as static.&#10;Deleted Countable.java&#10;Configured test report&#10;Changed pom.xml&#10;Configured test coverage&#10;Run &quot;TestsWithCoverage&quot; launch all tests from by.lev">
+      <change afterPath="$PROJECT_DIR$/src/test/java/by/lev/testjunit/ExampleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/by/lev/testjunit/exampletest/MavenConfigurationExampleTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lev/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/lev/Countable.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/by/lev/testjunit/CalculatorJUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/lev/testjunit/CalculatorJUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/by/lev/testjunit/LineConvertJUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/lev/testjunit/LineConvertJUnitTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +25,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="origin/master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -51,25 +54,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "last_opened_file_path": "C:/Users/user/Desktop/QA course/projects/homework-calculator",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "terminal"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/QA course/projects/homework-calculator&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\Desktop\QA course\projects\homework-calculator\src\test\java\by\lev\testjunit\bugreports" />
       <recent name="C:\Users\user\Desktop\QA course\projects\homework-calculator\src\test\java\by\lev\testngtest" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.InputCheckerJUnitTest">
+  <component name="RunManager" selected="JUnit.ExampleTest">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="by.lev.App" />
       <module name="homework-calculator" />
@@ -99,6 +102,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ExampleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="homework-calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.lev.testjunit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="by.lev.testjunit" />
+      <option name="MAIN_CLASS_NAME" value="by.lev.testjunit.ExampleTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="InputCheckerJUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="homework-calculator" />
       <extension name="coverage">
@@ -111,6 +129,31 @@
       <option name="MAIN_CLASS_NAME" value="by.lev.testjunit.InputCheckerJUnitTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TagExample" type="JUnit" factoryName="JUnit">
+      <module name="homework-calculator" />
+      <extension name="coverage" track_test_folders="true" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="tags" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <tag value="TagExample | TagExample2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TagsExample" type="JUnit" factoryName="JUnit">
+      <module name="homework-calculator" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="tags" />
+      <tag value="TagExample &amp; WithoutEquals" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -134,11 +177,15 @@
     <list>
       <item itemvalue="Application.App" />
       <item itemvalue="JUnit.TestsWithCoverage" />
+      <item itemvalue="JUnit.TagExample" />
+      <item itemvalue="JUnit.TagsExample" />
+      <item itemvalue="JUnit.ExampleTest" />
       <item itemvalue="JUnit.CalculatorJUnitTest" />
       <item itemvalue="JUnit.InputCheckerJUnitTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExampleTest" />
         <item itemvalue="JUnit.CalculatorJUnitTest" />
         <item itemvalue="JUnit.InputCheckerJUnitTest" />
         <item itemvalue="Application.App" />
@@ -329,7 +376,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675414511291</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Made Calculator.doAction as static.&#10;Deleted Countable.java&#10;Configured test report&#10;Changed pom.xml&#10;Configured test coverage&#10;Run &quot;TestsWithCoverage&quot; launch all tests from by.lev">
+      <created>1675513830413</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1675513830413</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -367,14 +421,15 @@
     <MESSAGE value="Bug report 2" />
     <MESSAGE value="Fixed bug from Bug report 2" />
     <MESSAGE value="Cleaning" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaning" />
+    <MESSAGE value="Made Calculator.doAction as static.&#10;Deleted Countable.java&#10;Configured test report&#10;Changed pom.xml&#10;Configured test coverage&#10;Run &quot;TestsWithCoverage&quot; launch all tests from by.lev" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made Calculator.doAction as static.&#10;Deleted Countable.java&#10;Configured test report&#10;Changed pom.xml&#10;Configured test coverage&#10;Run &quot;TestsWithCoverage&quot; launch all tests from by.lev" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/homework_calculator$TestsWithCoverage.ic" NAME="TestsWithCoverage Coverage Results" MODIFIED="1675513493026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/homework_calculator$TestsWithCoverage.ic" NAME="TestsWithCoverage Coverage Results" MODIFIED="1675516975072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>by.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/homework_calculator$CalculatorJUnitTest.ic" NAME="CalculatorJUnitTest Coverage Results" MODIFIED="1675512985001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
