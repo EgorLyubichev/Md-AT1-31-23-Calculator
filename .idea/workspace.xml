@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6dbb63b1-982f-4728-8f04-a20bd3344c8f" name="Changes" comment="Made Calculator.doAction as static.&#10;Deleted Countable.java&#10;Configured test report&#10;Changed pom.xml&#10;Configured test coverage&#10;Run &quot;TestsWithCoverage&quot; launch all tests from by.lev">
-      <change afterPath="$PROJECT_DIR$/src/test/java/by/lev/testjunit/ExampleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/by/lev/testjunit/exampletest/MavenConfigurationExampleTest.java" afterDir="false" />
+    <list default="true" id="6dbb63b1-982f-4728-8f04-a20bd3344c8f" name="Changes" comment="Added junit-platform-suite-engine&#10;Added running and filtering with @Tag&#10;Added running and filtering with @Suite and etc. annotations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/by/lev/testjunit/CalculatorJUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/lev/testjunit/CalculatorJUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/by/lev/testjunit/LineConvertJUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/lev/testjunit/LineConvertJUnitTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +69,7 @@
       <recent name="C:\Users\user\Desktop\QA course\projects\homework-calculator\src\test\java\by\lev\testngtest" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ExampleTest">
+  <component name="RunManager" selected="JUnit.LineConvertJUnitTest.testOperatorOfExpressionAfterSetElements">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="by.lev.App" />
       <module name="homework-calculator" />
@@ -133,6 +130,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LineConvertJUnitTest.testOperatorOfExpressionAfterSetElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="homework-calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.lev.testjunit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="by.lev.testjunit" />
+      <option name="MAIN_CLASS_NAME" value="by.lev.testjunit.LineConvertJUnitTest" />
+      <option name="METHOD_NAME" value="testOperatorOfExpressionAfterSetElements" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TagExample" type="JUnit" factoryName="JUnit">
       <module name="homework-calculator" />
       <extension name="coverage" track_test_folders="true" />
@@ -179,12 +192,14 @@
       <item itemvalue="JUnit.TestsWithCoverage" />
       <item itemvalue="JUnit.TagExample" />
       <item itemvalue="JUnit.TagsExample" />
+      <item itemvalue="JUnit.LineConvertJUnitTest.testOperatorOfExpressionAfterSetElements" />
       <item itemvalue="JUnit.ExampleTest" />
       <item itemvalue="JUnit.CalculatorJUnitTest" />
       <item itemvalue="JUnit.InputCheckerJUnitTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LineConvertJUnitTest.testOperatorOfExpressionAfterSetElements" />
         <item itemvalue="JUnit.ExampleTest" />
         <item itemvalue="JUnit.CalculatorJUnitTest" />
         <item itemvalue="JUnit.InputCheckerJUnitTest" />
@@ -383,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675513830413</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Added junit-platform-suite-engine&#10;Added running and filtering with @Tag&#10;Added running and filtering with @Suite and etc. annotations">
+      <created>1675589158368</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1675589158368</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -422,7 +444,8 @@
     <MESSAGE value="Fixed bug from Bug report 2" />
     <MESSAGE value="Cleaning" />
     <MESSAGE value="Made Calculator.doAction as static.&#10;Deleted Countable.java&#10;Configured test report&#10;Changed pom.xml&#10;Configured test coverage&#10;Run &quot;TestsWithCoverage&quot; launch all tests from by.lev" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made Calculator.doAction as static.&#10;Deleted Countable.java&#10;Configured test report&#10;Changed pom.xml&#10;Configured test coverage&#10;Run &quot;TestsWithCoverage&quot; launch all tests from by.lev" />
+    <MESSAGE value="Added junit-platform-suite-engine&#10;Added running and filtering with @Tag&#10;Added running and filtering with @Suite and etc. annotations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added junit-platform-suite-engine&#10;Added running and filtering with @Tag&#10;Added running and filtering with @Suite and etc. annotations" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -60,26 +60,26 @@ public class LineConvertJUnitTest {
     @Tag("TagExample")
     @Tag("WithoutEquals")
     public void testNum1OfExpressionAfterSetElements(){
-        Double expected = 11.5;
-        List<String> elements = List.of("11.5", "/", "22.6");
-        assertEquals(expected, converter.setElements(elements).getNum1());
+        String expected = "11.5";
+        List<String> elements = List.of(expected, "/", "22.6");
+        assertEquals(Double.parseDouble(expected), converter.setElements(elements).getNum1());
     }
 
     @Test
     @Tag("TagExample")
     @Tag("WithoutEquals")
     public void testOperatorOfExpressionAfterSetElements(){
-        char expected = '/';
-        List<String> elements = List.of("11.5", "/", "22.6");
-        assertEquals(expected, converter.setElements(elements).getOperator());
+        String expected = "/";
+        List<String> elements = List.of("11.5", expected, "22.6");
+        assertEquals(expected.charAt(0), converter.setElements(elements).getOperator());
     }
 
     @Test
     @Tag("TagExample")
     @Tag("WithoutEquals")
     public void testNum2OfExpressionAfterSetElements(){
-        Double expected = 22.6;
-        List<String> elements = List.of("11.5", "/", "22.6");
-        assertEquals(expected, converter.setElements(elements).getNum2());
+        String expected = "22.6";
+        List<String> elements = List.of("11.5", "/", expected);
+        assertEquals(Double.parseDouble(expected), converter.setElements(elements).getNum2());
     }
 }
